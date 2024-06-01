@@ -17,10 +17,6 @@ namespace ConferenceRoom.Data.Entities
 
         [ForeignKey("RoomId")]
         public Room Room { get; set; }
-        public int ReservationId { get; set; }
-
-        [ForeignKey("ReservationHolderId")]
-        public ReservationHolder ReservationHolder { get; set; }
         [Required]
         public DateTime StartDate { get; set; }
         [Required]
