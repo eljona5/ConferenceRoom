@@ -18,16 +18,13 @@ namespace ConferenceRoom.Services
 
         public async Task AddRoom(RoomViewModel vm)
         {
-            var rooms = new Room
-            {
-                Code = vm.Code,
-                MaximumCapacity = vm.MaximumCapacity
-            };
-
-            var roomExist = _context.Rooms.Where(p => p.Id == rooms.Id)
+            var rooms = new Room ();
+            
+            var roomExist = _context.Rooms.Where(p => p.Id == vm.Id ||
+                                                     p.Code==vm.Code )
             .FirstOrDefault();
 
-            {
+            
                 if (roomExist != null)
                 {
                     throw new Exception("Room  exist");
@@ -36,8 +33,7 @@ namespace ConferenceRoom.Services
 
                 _context.Rooms.Add(rooms);
                 await _context.SaveChangesAsync();
-
-            }
+         
         }
 
         public async Task DeleteRoom(int id)

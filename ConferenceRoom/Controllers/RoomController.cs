@@ -15,10 +15,7 @@ namespace ConferenceRoom.Controllers
         {
             _roomService = roomService;
         }
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
+
         public async Task<IActionResult> Index()
         {
             return View(await _roomService.GetAllRooms());
@@ -36,18 +33,17 @@ namespace ConferenceRoom.Controllers
         }
        // [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult Create([Bind("Code,MaximumCapacity")] RoomViewModel roomVM)
+        public IActionResult Create(RoomViewModel roomVM)
         {
             if (ModelState.IsValid)
             {
-
                 _roomService.AddRoom(roomVM);
 
                 return RedirectToAction(nameof(Index));
             }
             else
             {
-                return StatusCode(500, "Information is invalid");
+                return View(roomVM);
             }
         }
 
