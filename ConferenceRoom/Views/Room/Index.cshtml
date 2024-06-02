@@ -1,0 +1,44 @@
+﻿@model IEnumerable<ConferenceRoom.Models.RoomViewModel>
+
+
+<h1>Room</h1>
+
+<p>
+    <a asp-action="Create">Create New Room</a>
+</p>
+
+<p>
+    @using (Html.BeginForm("Index", "Room", FormMethod.Get))
+    {
+        <label> Filter</label>
+        @Html.TextBox("filterTerm")
+        ;
+        <input type="submit" value="Filter" />
+    }
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Room ID</th>
+            <th>Room Code</th>
+            <th>Maximum Capacity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var room in Model)
+        {
+            <tr>
+                <td>@room.Id</td>
+                <td>@room.Code</td>
+                <td>@room.MaximumCapacity</td>
+                <td class="table-actions">
+                    <a asp-action="Update" asp-route-id="@room.Id" class="btn btn-sm btn-primary">Update</a> |
+                    <a asp-action="Delete" asp-route-id="@room.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

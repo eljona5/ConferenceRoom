@@ -16,8 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Interface\" />
-    <Folder Include="Services\" />
+    <UpToDateCheckInput Remove="Views\Room\Update.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Room\Update.cshtml" />
   </ItemGroup>
 
 </Project>
