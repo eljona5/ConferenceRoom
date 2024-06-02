@@ -18,20 +18,17 @@ namespace ConferenceRoom.Services
 
         public async Task AddRoom(RoomViewModel vm)
         {
-            var rooms = new Room ();
-            
-            var roomExist = _context.Rooms.Where(p => p.Id == vm.Id ||
-                                                     p.Code==vm.Code )
-            .FirstOrDefault();
 
-            
+            var roomExist = _context.Rooms.Any(p => p.Id == vm.Id &&
+                                                     p.Code == vm.Code);//Check If room exist and response in web
+           
                 if (roomExist != null)
                 {
                     throw new Exception("Room  exist");
                 }
 
 
-                _context.Rooms.Add(rooms);
+                _context.Rooms.Add(ViewModelToEntity(vm));
                 await _context.SaveChangesAsync();
          
         }
@@ -65,39 +62,22 @@ namespace ConferenceRoom.Services
 
         public async Task<RoomViewModel> GetRoomById(int id)
         {  
-
             var roomViewModel = await _context.Rooms.FindAsync(id);
+            //cfare ndodh nese id nuk ndodhet ne db
             return EntityToViewModel(roomViewModel);
-
         }
 
         public async Task  UpdateRoom(RoomViewModel vm)
         {
-            var room = await _context.Rooms.FindAsync(vm.Id);
-            if (room == null)
+            var roomExist = _context.Rooms.Any(p => p.Id == vm.Id &&
+                                                      p.Code == vm.Code);
+
+            if (roomExist == null)
             {
                 throw new Exception("Room does not exist");
             }
-            if (vm.Id == null)
-            {
-                throw new Exception("can not have negative value");
-            }
-            else 
-            { 
-                room.Id = vm.Id;
-            }
-            if (!string.IsNullOrWhiteSpace(vm.Code))
-            {
-                room.Code =vm.Code;
-            }
-            if (vm.MaximumCapacity == null)
-            {
-                throw new Exception("can not have negative value");
-            }
-            else
-            {
-                room.MaximumCapacity = vm.MaximumCapacity;
-            }
+
+            _context.Rooms.Update(ViewModelToEntity(vm));
             await _context.SaveChangesAsync();
         }
 

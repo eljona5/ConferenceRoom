@@ -27,11 +27,18 @@ namespace ConferenceRoom.Controllers
             return View(room);
         }
 
+        public async Task<IActionResult> Update(int id)
+        {
+            var room = await _roomService.GetRoomById(id);
+            return View(room);
+        }
+
         public IActionResult Create()
         {
             return View();
         }
-       // [Authorize(Roles = "Admin")]
+
+        // [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Create(RoomViewModel roomVM)
         {
@@ -48,27 +55,19 @@ namespace ConferenceRoom.Controllers
         }
 
 
-        //[HttpPost]
-        //public async Task<IActionResult> Create([FromBody] RoomViewModel roomVM)
-        //{
-        //     await _service.AddRoom(roomVM);
-        //    return CreatedAtAction(nameof(Index), new { id = roomVM.Id }, roomVM);
-        //}
-
       //  [Authorize(Roles = "Admin")]
         [HttpPost]
-        public IActionResult Update([Bind(" Code, MaximumCapacity")] RoomViewModel roomVM)
+        public IActionResult Update(RoomViewModel roomVm)
         {
             if (ModelState.IsValid)
             {
-
-                _roomService.UpdateRoom(roomVM);
+                _roomService.UpdateRoom(roomVm);
 
                 return RedirectToAction(nameof(Index));
             }
             else
             {
-                return StatusCode(500, "Information is invalid");
+                return View(roomVm);
             }
         }
 
