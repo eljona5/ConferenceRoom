@@ -32,6 +32,12 @@ namespace ConferenceRoom.Controllers
             var room = await _roomService.GetRoomById(id);
             return View(room);
         }
+        public async Task<IActionResult> Delete(int id)
+        {
+            var room = await _roomService.GetRoomById(id);
+            return View(room);
+        }
+
 
         public IActionResult Create()
         {
@@ -55,7 +61,7 @@ namespace ConferenceRoom.Controllers
         }
 
 
-      //  [Authorize(Roles = "Admin")]
+        //  [Authorize(Roles = "Admin")]
         [HttpPost]
         public IActionResult Update(RoomViewModel roomVm)
         {
@@ -71,15 +77,25 @@ namespace ConferenceRoom.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin")]
+      //  [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
-        public IActionResult Delete(int Id)
+        public IActionResult Delete(RoomViewModel roomVm)
         {
-            var room = _roomService.DeleteRoom(Id);
-            return RedirectToAction(nameof(Index));
+      
+            if (ModelState.IsValid)
+            {
+                var room = _roomService.DeleteRoom(roomVm); 
+                return RedirectToAction(nameof(Index));
 
+            }
+            else
+            {
+                return View(roomVm);
+            }
         }
-        }
+
+
+
     }
-
+}
 

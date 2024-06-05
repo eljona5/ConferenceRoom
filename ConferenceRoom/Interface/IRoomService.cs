@@ -8,6 +8,6 @@ namespace ConferenceRoom.Interface
         Task<RoomViewModel> GetRoomById(int id);
         Task<List<RoomViewModel>>GetAllRooms();
         Task UpdateRoom(RoomViewModel vm);
-        Task DeleteRoom(int id);
+        Task DeleteRoom(RoomViewModel vm);
     }
 }

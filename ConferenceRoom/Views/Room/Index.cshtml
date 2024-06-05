@@ -1,6 +1,4 @@
-﻿@model IEnumerable<ConferenceRoom.Models.RoomViewModel>
-
-
+﻿ @model IEnumerable<ConferenceRoom.Models.RoomViewModel>
 <h1>Room</h1>
 
 <p>
@@ -11,8 +9,8 @@
     @using (Html.BeginForm("Index", "Room", FormMethod.Get))
     {
         <label> Filter</label>
-        @Html.TextBox("filterTerm")
-        ;
+        @Html.TextBox("filterTerm");
+        
         <input type="submit" value="Filter" />
     }
 </p>
@@ -34,11 +32,113 @@
                 <td>@room.Code</td>
                 <td>@room.MaximumCapacity</td>
                 <td class="table-actions">
-                    <a asp-action="Update" asp-route-id="@room.Id" class="btn btn-sm btn-primary">Update</a> |
-                    <a asp-action="Delete" asp-route-id="@room.Id" class="btn btn-sm btn-danger">Delete</a>
+                    <a asp-action="Update" asp-route-id="@room.Id" class="btn btn-sm btn-primary">Update</a> |   
+                     <a asp-action="Delete" asp-route-id="@room.Id" class="btn btn-sm btn-danger">Delete</a> 
                 </td>
             </tr>
         }
     </tbody>
 </table>
 
+<style scoped>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+
+.table-actions a {
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.table-actions .btn-primary {
+  background-color: #007bff;
+}
+
+.table-actions .btn-danger {
+  background-color: #dc3545;
+}
+
+
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+
+label {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #009879;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #007b5e;
+}
+
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+}
+</style>
