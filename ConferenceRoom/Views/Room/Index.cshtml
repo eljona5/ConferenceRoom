@@ -1,4 +1,6 @@
 ﻿ @model IEnumerable<ConferenceRoom.Models.RoomViewModel>
+
+
 <h1>Room</h1>
 
 <p>
@@ -32,8 +34,8 @@
                 <td>@room.Code</td>
                 <td>@room.MaximumCapacity</td>
                 <td class="table-actions">
-                    <a asp-action="Update" asp-route-id="@room.Id" class="btn btn-sm btn-primary">Update</a> |   
-                     <a asp-action="Delete" asp-route-id="@room.Id" class="btn btn-sm btn-danger">Delete</a> 
+                    <a asp-action="Update" asp-route-id="@room.Id" class="btn btn-sm btn-primary">Update</a> |
+                    <a asp-action="Details" asp-route-id="@room.Id" class="btn btn-primary">Details</a>
                 </td>
             </tr>
         }

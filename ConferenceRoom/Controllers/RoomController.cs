@@ -21,10 +21,11 @@ namespace ConferenceRoom.Controllers
             return View(await _roomService.GetAllRooms());
         }
 
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var room = _roomService.GetRoomById(id);
-            return View(room);
+            //var room = _roomService.GetRoomById(id);
+            //return View(room);
+            return View(await _roomService.GetRoomById(id));
         }
 
         public async Task<IActionResult> Update(int id)
@@ -93,8 +94,6 @@ namespace ConferenceRoom.Controllers
                 return View(roomVm);
             }
         }
-
-
 
     }
 }
