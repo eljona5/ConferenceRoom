@@ -398,3 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 /ConferenceRoom/obj/Debug/net8.0/ConferenceRoom.AssemblyInfoInputs.cache
 /ConferenceRoom/obj/Debug/net8.0/ConferenceRoom.GeneratedMSBuildEditorConfig.editorconfig
+/ConferenceRoom/obj/Debug/net8.0/ConferenceRoom.AssemblyInfo.cs
