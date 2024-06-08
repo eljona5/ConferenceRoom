@@ -396,3 +396,5 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/ConferenceRoom/obj/Debug/net8.0/ConferenceRoom.AssemblyInfoInputs.cache
+/ConferenceRoom/obj/Debug/net8.0/ConferenceRoom.GeneratedMSBuildEditorConfig.editorconfig
