@@ -1,9 +1,11 @@
-﻿using ConferenceRoom.Data.Entities;
+﻿using ConferenceRoom.Data.DBContext;
+using ConferenceRoom.Data.Entities;
 using ConferenceRoom.Interface;
 using ConferenceRoom.Models;
 using ConferenceRoom.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 
 namespace ConferenceRoom.Controllers
@@ -11,6 +13,7 @@ namespace ConferenceRoom.Controllers
     public class RoomController : Controller
     {
         private readonly IRoomService _roomService;
+        private readonly ApplicationDbContext _context;
         public RoomController(IRoomService roomService)
         {
             _roomService = roomService;
@@ -18,6 +21,7 @@ namespace ConferenceRoom.Controllers
 
         public async Task<IActionResult> Index()
         {
+
             return View(await _roomService.GetAllRooms());
         }
 

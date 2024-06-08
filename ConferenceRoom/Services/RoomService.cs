@@ -56,7 +56,6 @@ namespace ConferenceRoom.Services
             }
 
             return roomsVm;
-
         }
 
         public async Task<RoomViewModel> GetRoomById(int id)

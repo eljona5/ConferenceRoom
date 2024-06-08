@@ -8,12 +8,12 @@
 </p>
 
 <p>
-    @using (Html.BeginForm("Index", "Room", FormMethod.Get))
+    @using (Html.BeginForm("Index", "Rooms", FormMethod.Get))
     {
         <label> Filter</label>
-        @Html.TextBox("filterTerm");
-        
-        <input type="submit" value="Filter" />
+        @Html.TextBox("filterTerm")
+        ;
+        <input type="submit" value="Fiter" />
     }
 </p>
 
