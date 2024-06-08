@@ -16,6 +16,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 
 builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IUnavailabilityPeriodService, UnavailabilityPeriodService>();
+
 builder.Services.AddControllersWithViews();
 
 
