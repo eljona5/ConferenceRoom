@@ -1,5 +1,6 @@
 using ConferenceRoom.Data.DBContext;
 using ConferenceRoom.Interface;
+using ConferenceRoom.Seed;
 using ConferenceRoom.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +14,16 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddUserManager<UserManager<IdentityUser>>()
+    .AddRoleManager<RoleManager<IdentityRole>>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
-
-builder.Services.AddScoped<IRoomService, RoomService>();
 builder.Services.AddControllersWithViews();
+
+//Dependecy Injection
+builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IUnavailabilityPeriodService, UnavailabilityPeriodService>();
+
 
 
 var app = builder.Build();
@@ -40,6 +47,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+await RoleSeed.SeedRolesAsync(app.Services);
+await UserSeed.SeedAdmin(app.Services);
 
 app.MapControllerRoute(
     name: "default",

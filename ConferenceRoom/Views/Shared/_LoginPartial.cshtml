@@ -1,8 +1,10 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@using ConferenceRoom.Helpers
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
 <ul class="navbar-nav">
+
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
@@ -14,6 +16,7 @@
         </form>
     </li>
 }
+
 else
 {
     <li class="nav-item">

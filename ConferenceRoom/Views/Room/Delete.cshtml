@@ -1,32 +1,38 @@
 ﻿@model ConferenceRoom.Models.RoomViewModel
 @{
-    ViewData["Title"] = "Update Room";
+    ViewData["Title"] = "Delete Room";
 }
-<h1>Update Room</h1>
-<div class="update-form">
-    <form asp-action="Update">
+<h1>Delete Room</h1>
+<div class="delete-form">
+    <form asp-action="delete">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        
+         <div class="form-group">
+            <label asp-for="Id" class="control-label"></label>
+            <input asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id" class="text-danger"></span>
+        </div> 
         <div class="form-group">
             <label asp-for="Code" class="control-label"></label>
             <input asp-for="Code" class="form-control" />
             <span asp-validation-for="Code" class="text-danger"></span>
-        </div>
+        </div> 
         <div class="form-group">
             <label asp-for="MaximumCapacity" class="control-label"></label>
             <input asp-for="MaximumCapacity" class="form-control" />
             <span asp-validation-for="MaximumCapacity" class="text-danger"></span>
         </div>
         <div class="form-group">
-            <input type="submit" value="Update" class="btn btn-sm btn-primary" />
+            <input type="submit" value="Delete" class="btn-sm btn-danger" />
         </div>
     </form>
 </div>
 <style scoped>
-    .update-form {
+    .delete-form {
         border: solid black 1px;
-        max-height: 500px;
-        max-width: 500px;
+        max-height: 300px;
+        max-width: 300px;
         margin: auto;
-        padding: 10px;
+        padding: 5px;
     }
 </style>
