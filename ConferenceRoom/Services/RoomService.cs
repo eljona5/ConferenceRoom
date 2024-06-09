@@ -23,51 +23,55 @@ namespace ConferenceRoom.Services
 
             if (roomExist)
             {
-                throw new Exception("Room  exist");
+                throw new Exception("Room exist!");
             }
 
-
             _context.Rooms.Add(ViewModelToEntity(vm));
-            await _context.SaveChangesAsync();
-
+            await _context.SaveChangesAsync(); 
         }
 
-        public async Task DeleteRoom(RoomViewModel vm)
+        public async Task DeleteRoom(int id)
         {
 
-            var room = _context.Rooms.Where(p => p.Id == vm.Id);//Check If room exist and response in web
-            if (room == null)
-                throw new Exception("Room does not exist");
+                var room = _context.Rooms.Where(p => p.Id == id).FirstOrDefault();//Check If room exist and response in web
 
-            _context.Rooms.Remove(ViewModelToEntity(vm));
-            await _context.SaveChangesAsync();
-             
+                if (room == null)
+                {
+                    throw new Exception("Room does not exist");
+                }
+                _context.Rooms.Remove(room);
+                await _context.SaveChangesAsync();
+
         }
 
         public async Task<List<RoomViewModel>> GetAllRooms()
-        { 
-            var roomsVm = new List<RoomViewModel>();
+        {
+           
+                var roomsVm = new List<RoomViewModel>();
 
-            var rooms = await _context.Rooms.ToListAsync();
+                var rooms = await _context.Rooms.ToListAsync();
 
-            foreach (var room in rooms)
-            {
-                roomsVm.Add(EntityToViewModel(room));
-            }
+                foreach (var room in rooms)
+                {
+                    roomsVm.Add(EntityToViewModel(room));
+                }
 
-            return roomsVm;
+                return roomsVm;
+             
         }
 
         public async Task<RoomViewModel> GetRoomById(int id)
         {
-            //var roomExist = _context.Rooms.Where(p => p.Id == p.Id);
-            //if (roomExist == null)
-            //{
-            //    throw new Exception("Id does not exist");
-            //}
-            var roomViewModel = await _context.Rooms.FindAsync(id);
-            //cfare ndodh nese id nuk ndodhet ne db
-            return EntityToViewModel(roomViewModel);
+            
+                var roomViewModel = await _context.Rooms.FindAsync(id);
+                //cfare ndodh nese id nuk ndodhet ne db
+                if (roomViewModel == null)
+                {
+                    throw new Exception("Room with the specified ID does not exist");
+                }
+
+                return EntityToViewModel(roomViewModel);
+         
         }
 
         public async Task  UpdateRoom(RoomViewModel vm)
@@ -80,10 +84,13 @@ namespace ConferenceRoom.Services
                 {
                     throw new Exception("Room does not exist");
                 }
+
+                _context.Rooms.Update(ViewModelToEntity(vm));
+                await _context.SaveChangesAsync();
             
-            _context.Rooms.Update(ViewModelToEntity(vm));
-            await _context.SaveChangesAsync();
+
         }
+
 
 
 

@@ -1,8 +1,15 @@
 ﻿using ConferenceRoom.Data.DBContext;
+using ConferenceRoom.Data.Entities;
+using ConferenceRoom.Helpers;
 using ConferenceRoom.Interface;
 using ConferenceRoom.Models;
 using ConferenceRoom.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace ConferenceRoom.Controllers
 {
@@ -10,10 +17,10 @@ namespace ConferenceRoom.Controllers
     {
         private readonly IUnavailabilityPeriodService _unavailabilityPeriodService;
         private readonly ApplicationDbContext _context;
-        public UnavailabilityPeriodController(IUnavailabilityPeriodService unavailabilityPeriodService, ApplicationDbContext context)
+        public UnavailabilityPeriodController(IUnavailabilityPeriodService unavailabilityPeriodService)
         {
             _unavailabilityPeriodService = unavailabilityPeriodService;
-            _context = context;
+          
         }
 
         public async Task<IActionResult> Index()
@@ -22,22 +29,46 @@ namespace ConferenceRoom.Controllers
             return View(await _unavailabilityPeriodService.GetAllUnavailabilityPeriods());
         }
 
+
         public async Task<IActionResult> Details(int id)
         {
-            //var room = _roomService.GetRoomById(id);
-            //return View(room);
             return View(await _unavailabilityPeriodService.GetUnavailabilityPeriodById(id));
         }
 
+
+        [Authorize(Roles = Constants.AdminRole)]
         public async Task<IActionResult> Update(int id)
         {
+            try 
+            { 
             var room = await _unavailabilityPeriodService.GetUnavailabilityPeriodById(id);
             return View(room);
+            }
+
+            catch (Exception ex)
+            {
+                var error = new ErrorViewModel();
+                error.ErrorMessage = ex.Message;
+                return View("Error", error);
+            }
         }
+
+
+        [Authorize(Roles = Constants.AdminRole)]
         public async Task<IActionResult> Delete(int id)
         {
-            var room = await _unavailabilityPeriodService.GetUnavailabilityPeriodById(id);
-            return View(room);
+            try 
+            { 
+             _unavailabilityPeriodService.DeleteUnavailabilityPeriod(id);
+
+            return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                var error = new ErrorViewModel();
+                error.ErrorMessage = ex.Message;
+                return View("Error", error);
+            }
         }
 
 
@@ -46,10 +77,12 @@ namespace ConferenceRoom.Controllers
             return View();
         }
 
-        // [Authorize(Roles = "Admin")]
+         [Authorize(Roles = Constants.AdminRole)]
         [HttpPost]
-        public IActionResult Create(UnavailabilityPeriodViewModel unavailabilityPeriodViewModel)
+        public async Task<IActionResult> Create(UnavailabilityPeriodViewModel unavailabilityPeriodViewModel)
         {
+            try 
+            { 
             if (ModelState.IsValid)
             {
                 _unavailabilityPeriodService.AddUnavailabilityPeriod(unavailabilityPeriodViewModel);
@@ -60,13 +93,21 @@ namespace ConferenceRoom.Controllers
             {
                 return View(unavailabilityPeriodViewModel);
             }
+            }
+            catch (Exception ex)
+            {
+                var error = new ErrorViewModel();
+                error.ErrorMessage = ex.Message;
+                return View("Error", error);
+            }
         }
 
 
-        //  [Authorize(Roles = "Admin")]
+        [Authorize(Roles = Constants.AdminRole)]
         [HttpPost]
         public IActionResult Update(UnavailabilityPeriodViewModel unavailabilityPeriodViewModel )
         {
+            try { 
             if (ModelState.IsValid)
             {
                 _unavailabilityPeriodService.UpdateUnavailabilityPeriod(unavailabilityPeriodViewModel);
@@ -77,24 +118,16 @@ namespace ConferenceRoom.Controllers
             {
                 return View(unavailabilityPeriodViewModel);
             }
-        }
-
-        //  [Authorize(Roles = "Admin")]
-        [HttpPost, ActionName("Delete")]
-        public IActionResult Delete(UnavailabilityPeriodViewModel  unavailabilityPeriodViewModel)
-        {
-
-            if (ModelState.IsValid)
-            {
-                var room = _unavailabilityPeriodService.DeleteUnavailabilityPeriod(unavailabilityPeriodViewModel);
-                return RedirectToAction(nameof(Index));
-
             }
-            else
+            catch (Exception ex)
             {
-                return View(unavailabilityPeriodViewModel);
+                var error = new ErrorViewModel();
+                error.ErrorMessage = ex.Message;
+                return View("Error", error);
             }
         }
+
+        
 
     }
 }

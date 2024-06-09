@@ -8,6 +8,7 @@ namespace ConferenceRoom.Interface
         Task<UnavailabilityPeriodViewModel> GetUnavailabilityPeriodById(int id);
         Task<List<UnavailabilityPeriodViewModel>> GetAllUnavailabilityPeriods();
         Task UpdateUnavailabilityPeriod(UnavailabilityPeriodViewModel periodViewModel);
-        Task DeleteUnavailabilityPeriod(UnavailabilityPeriodViewModel periodViewModel);
+        Task DeleteUnavailabilityPeriod(int id);
+
     }
 }

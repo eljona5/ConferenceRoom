@@ -1,5 +1,6 @@
 ﻿using ConferenceRoom.Data.DBContext;
 using ConferenceRoom.Data.Entities;
+using ConferenceRoom.Helpers;
 using ConferenceRoom.Interface;
 using ConferenceRoom.Models;
 using ConferenceRoom.Services;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConferenceRoom.Controllers
 {
@@ -26,21 +28,40 @@ namespace ConferenceRoom.Controllers
         }
 
         public async Task<IActionResult> Details(int id)
-        {
-            //var room = _roomService.GetRoomById(id);
-            //return View(room);
+        {     
             return View(await _roomService.GetRoomById(id));
         }
-
+        [Authorize(Roles = Constants.AdminRole)]
         public async Task<IActionResult> Update(int id)
         {
+            try
+            { 
             var room = await _roomService.GetRoomById(id);
             return View(room);
+            }
+            catch (Exception ex)
+            {
+                var error = new ErrorViewModel();
+                error.ErrorMessage = ex.Message;
+                return View("Error", error);
+            }
         }
+        [Authorize(Roles = Constants.AdminRole)]
         public async Task<IActionResult> Delete(int id)
         {
-            var room = await _roomService.GetRoomById(id);
-            return View(room);
+            try
+            {
+                //duhet te therrasesh metoden e delete
+                await _roomService.DeleteRoom(id);
+                //duhet te kthesh view index
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                var error = new ErrorViewModel();
+                error.ErrorMessage = ex.Message;
+                return View("Error", error);
+            }
         }
 
 
@@ -49,27 +70,39 @@ namespace ConferenceRoom.Controllers
             return View();
         }
 
-        // [Authorize(Roles = "Admin")]
+        [Authorize(Roles = Constants.AdminRole)]
         [HttpPost]
-        public IActionResult Create(RoomViewModel roomVM)
+        public async Task<IActionResult> Create(RoomViewModel roomVM)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _roomService.AddRoom(roomVM);
+                if (ModelState.IsValid)
+                {
+                    await _roomService.AddRoom(roomVM);
 
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    return View(roomVM);
+                }
             }
-            else
+            catch(Exception ex)
             {
-                return View(roomVM);
+                var error = new ErrorViewModel();
+                error.ErrorMessage = ex.Message;
+                return View("Error", error);
             }
         }
 
 
-        //  [Authorize(Roles = "Admin")]
+         [Authorize(Roles = Constants.AdminRole)]
         [HttpPost]
         public IActionResult Update(RoomViewModel roomVm)
         {
+          try 
+          {
+                
             if (ModelState.IsValid)
             {
                 _roomService.UpdateRoom(roomVm);
@@ -80,24 +113,15 @@ namespace ConferenceRoom.Controllers
             {
                 return View(roomVm);
             }
-        }
-
-      //  [Authorize(Roles = "Admin")]
-        [HttpPost, ActionName("Delete")]
-        public IActionResult Delete(RoomViewModel roomVm)
-        {
-      
-            if (ModelState.IsValid)
+          }
+            catch(Exception ex)
             {
-                var room = _roomService.DeleteRoom(roomVm); 
-                return RedirectToAction(nameof(Index));
-
-            }
-            else
-            {
-                return View(roomVm);
+                var error = new ErrorViewModel();
+        error.ErrorMessage = ex.Message;
+                return View("Error", error);
             }
         }
+
 
     }
 }

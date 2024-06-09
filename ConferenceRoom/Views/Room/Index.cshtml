@@ -1,19 +1,22 @@
-﻿ @model IEnumerable<ConferenceRoom.Models.RoomViewModel>
+﻿@using ConferenceRoom.Helpers
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+ @model IEnumerable<ConferenceRoom.Models.RoomViewModel>
 
 
 <h1>Room</h1>
 
 <p>
-    <a asp-action="Create">Create New Room</a>
+    <a asp-action="Create" >Create New Room</a>
 </p>
 
 <p>
     @using (Html.BeginForm("Index", "Rooms", FormMethod.Get))
     {
-        <label> Filter</label>
+        <label> Search </label>
         @Html.TextBox("filterTerm")
         ;
-        <input type="submit" value="Fiter" />
+        <input type="submit" value="Search" />
     }
 </p>
 
@@ -21,7 +24,7 @@
     <thead>
         <tr>
             <th>Room ID</th>
-            <th>Room Code</th>
+            <th>Room Code </th>
             <th>Maximum Capacity</th>
             <th>Action</th>
         </tr>
@@ -33,10 +36,27 @@
                 <td>@room.Id</td>
                 <td>@room.Code</td>
                 <td>@room.MaximumCapacity</td>
-                <td class="table-actions">
-                    <a asp-action="Update" asp-route-id="@room.Id" class="btn btn-sm btn-primary">Update</a> |
+
+                
+                    
+                        <td class="table-actions">
                     <a asp-action="Details" asp-route-id="@room.Id" class="btn btn-primary">Details</a>
-                </td>
+
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                    if (User.IsInRole(Constants.AdminRole))
+                        {
+                        
+                            <a asp-action="Update" asp-route-id="@room.Id" class="btn btn-sm btn-primary">Update</a>
+
+                            <a asp-action="Delete" asp-route-id="@room.Id" class="btn btn-sm btn-danger">Delete</a>
+                          
+                        }
+                    }
+                        
+                        </td>
+                    
+                
             </tr>
         }
     </tbody>
@@ -129,10 +149,14 @@ input[type="submit"]:hover {
 a {
   color: #007bff;
   text-decoration: none;
-}
+   padding: 5px 10px;
+   font-size: 16px;
+   border-radius: 5px;
+    }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color :green
 }
 
 h1 {
