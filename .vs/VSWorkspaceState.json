@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ConferenceRoom",
+    "\\ConferenceRoom\\Controllers",
+    "\\ConferenceRoom\\Data",
+    "\\ConferenceRoom\\Data\\Entities",
+    "\\ConferenceRoom\\Interface",
+    "\\ConferenceRoom\\Models",
+    "\\ConferenceRoom\\obj",
+    "\\ConferenceRoom\\Views",
+    "\\ConferenceRoom\\Views\\Booking"
+  ],
+  "SelectedNode": "\\ConferenceRoom.sln",
+  "PreviewInSolutionExplorer": false
+}

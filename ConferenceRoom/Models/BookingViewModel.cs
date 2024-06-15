@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConferenceRoom.Data.Entities;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ConferenceRoom.Models
@@ -15,21 +16,23 @@ namespace ConferenceRoom.Models
         [Range(1, 100, ErrorMessage = "Number of people needs to be between 1 and 100.")]
         public int NumberOfPeople { get; set; }
 
-        public bool IsConfirmed { get; set; }
+        //public bool IsConfirmed { get; set; }
 
         [Required]
         public int RoomId { get; set; }
 
         [Required]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         [Display(Name = "Start Date")]
         public DateTime StartDate { get; set; }
 
         [Required]
-        [DataType(DataType.Date)]
+        [DataType(DataType.DateTime)]
         [Display(Name = "End Date")]
         public DateTime EndDate { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        public ReservationHolder ReservationHolder { get; set; }
     }
 }

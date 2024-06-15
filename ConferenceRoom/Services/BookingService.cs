@@ -22,7 +22,7 @@ namespace ConferenceRoom.Services
         {
             var bookingsVm = new List<BookingViewModel>();
 
-            var bookings = await _context.Bookings.ToListAsync();
+            var bookings = await _context.Bookings.Include(b => b.ReservationHolder).ToListAsync();
 
             foreach (var booking in bookings)
             {
@@ -39,34 +39,28 @@ namespace ConferenceRoom.Services
                 Id = booking.Id,
                 Code = booking.Code,
                 NumberOfPeople = booking.NumberOfPeople,
-                IsConfirmed = booking.IsConfirmed,
+                //IsConfirmed = booking.IsConfirmed,
                 RoomId = booking.RoomId,
                 StartDate = booking.StartDate,
                 EndDate = booking.EndDate,
-                IsDeleted = booking.IsDeleted
+                IsDeleted = booking.IsDeleted,
             };
         }
 
-        public async Task AddBooking(BookingViewModel vm)
+        public async Task AddBooking(Booking booking)
         {
-            var booking = new Booking
-            {
-                Code = vm.Code,
-                NumberOfPeople = vm.NumberOfPeople,
-                IsConfirmed = vm.IsConfirmed,
-                RoomId = vm.RoomId,
-                StartDate = vm.StartDate,
-                EndDate = vm.EndDate,
-                IsDeleted = vm.IsDeleted
-            };
+            var savedBooking = _context.Bookings.Add(booking);
 
-            _context.Bookings.Add(booking);
             await _context.SaveChangesAsync();
+
+            //var booking = ViewModelToEntity(model);
+            //_context.Bookings.Add(booking);
+            //await _context.SaveChangesAsync();
         }
 
         public async Task<BookingViewModel> GetBookingById(int id)
         {
-            var booking = await _context.Bookings.FindAsync(id);
+            var booking = await _context.Bookings.Include(b => b.ReservationHolder).FirstOrDefaultAsync(b => b.Id == id);
             if (booking == null)
             {
                 return null;
@@ -75,22 +69,8 @@ namespace ConferenceRoom.Services
             return EntityToViewModel(booking);
         }
 
-        public async Task UpdateBooking(BookingViewModel vm)
+        public async Task UpdateBooking(Booking booking)
         {
-            var booking = await _context.Bookings.FindAsync(vm.Id);
-            if (booking == null)
-            {
-                return;
-            }
-
-            booking.Code = vm.Code;
-            booking.NumberOfPeople = vm.NumberOfPeople;
-            booking.IsConfirmed = vm.IsConfirmed;
-            booking.RoomId = vm.RoomId;
-            booking.StartDate = vm.StartDate;
-            booking.EndDate = vm.EndDate;
-            booking.IsDeleted = vm.IsDeleted;
-
             _context.Bookings.Update(booking);
             await _context.SaveChangesAsync();
         }
@@ -103,8 +83,13 @@ namespace ConferenceRoom.Services
                 return;
             }
 
-            _context.Bookings.Remove(booking);
+            booking.IsDeleted = true;
             await _context.SaveChangesAsync();
+        }
+
+        public Task UpdateBooking(BookingViewModel booking)
+        {
+            throw new NotImplementedException();
         }
     }
 }

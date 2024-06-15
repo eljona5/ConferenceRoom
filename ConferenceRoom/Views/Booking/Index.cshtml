@@ -34,8 +34,8 @@
                 <td>@booking.Id</td>
                 <td>@booking.Code</td>
                 <td>@booking.NumberOfPeople</td>
-                <td>@booking.IsConfirmed</td>
-                <td>@booking.StartDate.ToShortDateString()</td>
+@*                 <td>@booking.IsConfirmed</td>
+ *@                <td>@booking.StartDate</td>
                 <td>@booking.EndDate.ToShortDateString()</td>
                 <td class="table-actions">
                     <a asp-action="Update" asp-route-id="@booking.Id" class="btn btn-sm btn-primary">Update</a> |

@@ -17,7 +17,7 @@ namespace ConferenceRoom.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.5")
+                .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -37,13 +37,16 @@ namespace ConferenceRoom.Data.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool?>("IsConfirmed")
+                    b.Property<bool>("IsConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<int>("NumberOfPeople")
                         .HasColumnType("int");
 
-                    b.Property<int?>("RoomId")
+                    b.Property<int>("RoomId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("StartDate")
@@ -96,7 +99,8 @@ namespace ConferenceRoom.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("BookingId");
+                    b.HasIndex("BookingId")
+                        .IsUnique();
 
                     b.ToTable("ReservationHolders");
                 });
@@ -285,12 +289,10 @@ namespace ConferenceRoom.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -327,12 +329,10 @@ namespace ConferenceRoom.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -346,7 +346,9 @@ namespace ConferenceRoom.Data.Migrations
                 {
                     b.HasOne("ConferenceRoom.Data.Entities.Room", "Room")
                         .WithMany()
-                        .HasForeignKey("RoomId");
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Room");
                 });
@@ -354,8 +356,8 @@ namespace ConferenceRoom.Data.Migrations
             modelBuilder.Entity("ConferenceRoom.Data.Entities.ReservationHolder", b =>
                 {
                     b.HasOne("ConferenceRoom.Data.Entities.Booking", "Booking")
-                        .WithMany()
-                        .HasForeignKey("BookingId")
+                        .WithOne("ReservationHolder")
+                        .HasForeignKey("ConferenceRoom.Data.Entities.ReservationHolder", "BookingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -410,6 +412,12 @@ namespace ConferenceRoom.Data.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ConferenceRoom.Data.Entities.Booking", b =>
+                {
+                    b.Navigation("ReservationHolder")
                         .IsRequired();
                 });
 #pragma warning restore 612, 618

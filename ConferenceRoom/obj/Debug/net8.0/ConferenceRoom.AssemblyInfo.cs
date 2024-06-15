@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConferenceRoom")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0f12c4d42fe3673c5b8f1f7e98f4a95caf858e35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a5e2986cdfadbce3650d5111fdc561cae9e2c97")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConferenceRoom")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConferenceRoom")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

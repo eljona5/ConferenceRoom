@@ -12,14 +12,16 @@ namespace ConferenceRoom.Data.Entities
         public string? Code { get; set; }
         [Required]
         public int NumberOfPeople { get; set; }
-        public bool? IsConfirmed { get; set; }
-        public int? RoomId { get; set; }
+        //public bool IsConfirmed { get; set; }
+        public int RoomId { get; set; }
 
         [ForeignKey("RoomId")]
         public Room Room { get; set; }
         [Required]
         public DateTime StartDate { get; set; }
         [Required]
-        public DateTime EndDate { get; set; }
+        public DateTime EndDate{ get; set; }
+        public bool IsDeleted { get; internal set; }
+        public ReservationHolder ReservationHolder { get; internal set; }
     }
 }

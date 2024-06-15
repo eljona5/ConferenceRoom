@@ -19,10 +19,9 @@ namespace ConferenceRoom.Services
         public async Task AddRoom(RoomViewModel vm)
         {
 
-            var roomExist = _context.Rooms.Any(p => p.Id == vm.Id &&
-                                                     p.Code == vm.Code);//Check If room exist and response in web
+            var roomExist = _context.Rooms.Any(p =>  p.Code == vm.Code);//Check If room exist and response in web
            
-                if (roomExist != null)
+                if (roomExist)
                 {
                     throw new Exception("Room  exist");
                 }
