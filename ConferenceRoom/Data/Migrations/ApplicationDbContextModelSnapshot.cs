@@ -30,7 +30,7 @@ namespace ConferenceRoom.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Code")
+                    b.Property<string>("RoomCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -46,7 +46,7 @@ namespace ConferenceRoom.Data.Migrations
                     b.Property<int>("NumberOfPeople")
                         .HasColumnType("int");
 
-                    b.Property<int>("RoomId")
+                    b.Property<int>("RoomCode")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("StartDate")
@@ -54,7 +54,7 @@ namespace ConferenceRoom.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RoomId");
+                    b.HasIndex("RoomCode");
 
                     b.ToTable("Bookings");
                 });
@@ -113,7 +113,7 @@ namespace ConferenceRoom.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Code")
+                    b.Property<string>("RoomCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -346,7 +346,7 @@ namespace ConferenceRoom.Data.Migrations
                 {
                     b.HasOne("ConferenceRoom.Data.Entities.Room", "Room")
                         .WithMany()
-                        .HasForeignKey("RoomId")
+                        .HasForeignKey("RoomCode")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

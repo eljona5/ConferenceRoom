@@ -10,13 +10,11 @@ namespace ConferenceRoom.Models
 
         [Required]
         [StringLength(10, MinimumLength = 4, ErrorMessage = "Booking code needs to have between 4 and 10 characters.")]
-        public string Code { get; set; }
+        public string Code { get; set; } = "test";
 
         [Required]
         [Range(1, 100, ErrorMessage = "Number of people needs to be between 1 and 100.")]
         public int NumberOfPeople { get; set; }
-
-        //public bool IsConfirmed { get; set; }
 
         [Required]
         public int RoomId { get; set; }
@@ -33,6 +31,8 @@ namespace ConferenceRoom.Models
 
         public bool IsDeleted { get; set; }
 
-        public ReservationHolder ReservationHolder { get; set; }
+        //[Required] // Ensure this property is required
+        //public ReservationHolderViewModel ReservationHolder { get; set; }
     }
+
 }

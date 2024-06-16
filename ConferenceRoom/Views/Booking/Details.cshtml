@@ -10,23 +10,24 @@
     <h4>Booking</h4>
     <hr />
     <dl class="row">
-        <dt class="col-sm-2">
+@*         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Code)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Code)
-        </dd>
+        </dd> *@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.NumberOfPeople)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.NumberOfPeople)
         </dd>
-       @*  <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.IsConfirmed)
+        @* Uncomment and use this section if IsConfirmed property exists in the model
+        @* <dt class="col-sm-2">
+        @Html.DisplayNameFor(model => model.IsConfirmed)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.IsConfirmed)
+        @Html.DisplayFor(model => model.IsConfirmed)
         </dd> *@
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.RoomId)
@@ -38,13 +39,13 @@
             @Html.DisplayNameFor(model => model.StartDate)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.StartDate.ToShortDateString())
+            @Model.StartDate.ToShortDateString()
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.EndDate)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.EndDate.ToShortDateString())
+            @Model.EndDate.ToShortDateString()
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.IsDeleted)
@@ -55,9 +56,9 @@
     </dl>
 </div>
 <div>
-    <a href="@Url.Action("Edit", new { id = Model.Id })" class="btn btn-primary">Edit</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
     <form asp-action="Delete" asp-route-id="@Model.Id" method="post" class="d-inline">
         <button type="submit" class="btn btn-danger">Delete</button>
     </form>
-    <a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </div>

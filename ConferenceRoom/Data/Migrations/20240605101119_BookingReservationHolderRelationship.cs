@@ -19,7 +19,7 @@ namespace ConferenceRoom.Data.Migrations
                 table: "ReservationHolders");
 
             migrationBuilder.AlterColumn<int>(
-                name: "RoomId",
+                name: "RoomCode",
                 table: "Bookings",
                 type: "int",
                 nullable: false,
@@ -83,7 +83,7 @@ namespace ConferenceRoom.Data.Migrations
             migrationBuilder.AddForeignKey(
                 name: "FK_Bookings_Rooms_RoomId",
                 table: "Bookings",
-                column: "RoomId",
+                column: "RoomCode",
                 principalTable: "Rooms",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
@@ -101,7 +101,7 @@ namespace ConferenceRoom.Data.Migrations
                 table: "ReservationHolders");
 
             migrationBuilder.AlterColumn<int>(
-                name: "RoomId",
+                name: "RoomCode",
                 table: "Bookings",
                 type: "int",
                 nullable: true,
@@ -160,7 +160,7 @@ namespace ConferenceRoom.Data.Migrations
             migrationBuilder.AddForeignKey(
                 name: "FK_Bookings_Rooms_RoomId",
                 table: "Bookings",
-                column: "RoomId",
+                column: "RoomCode",
                 principalTable: "Rooms",
                 principalColumn: "Id");
         }

@@ -3,32 +3,88 @@
   "WorkspaceRootPath": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\entities\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\models\\bookingreservationholderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\models\\bookingreservationholderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\services\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\migrations\\20240601114522_roomentitety.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\migrations\\20240601114522_roomentitety.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\migrations\\20240605101119_bookingreservationholderrelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\migrations\\20240605101119_bookingreservationholderrelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\migrations\\20240601114712_bookingentitety.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\migrations\\20240601114712_bookingentitety.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\dbcontext\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\entities\\reservationholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\entities\\reservationholder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\models\\reservationholderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\models\\reservationholderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\gitignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -41,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -63,28 +115,8 @@
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\views\\booking\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\views\\booking\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\data\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\data\\entities\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\services\\reservationholderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\services\\reservationholderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\interface\\iroomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -93,14 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\controllers\\reservationholdercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\controllers\\reservationholdercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\models\\reservationholderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\models\\reservationholderviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|solutionrelative:conferenceroom\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{397E1244-D71C-4166-AF85-925A46C55BED}|ConferenceRoom\\ConferenceRoom.csproj|c:\\users\\megi\\source\\eljona5\\conferenceroom\\conferenceroom\\models\\roomviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,7 +190,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -181,53 +205,162 @@
               "Name": "ST:486052612:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "gitignore.txt",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\gitignore.txt",
-              "RelativeDocumentMoniker": "ConferenceRoom\\gitignore.txt",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\gitignore.txt",
-              "RelativeToolTip": "ConferenceRoom\\gitignore.txt",
-              "ViewState": "AQIAAI8BAAAAAAAAAAAYwJgBAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-15T15:59:49.39Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookingViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\BookingViewModel.cs",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Models\\BookingViewModel.cs",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\BookingViewModel.cs",
-              "RelativeToolTip": "ConferenceRoom\\Models\\BookingViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-15T12:30:56.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BookingController.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\BookingController.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Controllers\\BookingController.cs",
               "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\BookingController.cs",
               "RelativeToolTip": "ConferenceRoom\\Controllers\\BookingController.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAArwEMAAAATAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAcwB8AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-15T12:22:13.138Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "BookingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\BookingViewModel.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Models\\BookingViewModel.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\BookingViewModel.cs",
+              "RelativeToolTip": "ConferenceRoom\\Models\\BookingViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T12:34:04.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Create.cshtml",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Create.cshtml",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Create.cshtml",
+              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Create.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAASwBAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:46:33.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\Room.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Entities\\Room.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\Room.cs",
+              "RelativeToolTip": "ConferenceRoom\\Data\\Entities\\Room.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:15:46.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\Booking.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Entities\\Booking.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\Booking.cs",
+              "RelativeToolTip": "ConferenceRoom\\Data\\Entities\\Booking.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAjwC0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T12:10:10.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Index.cshtml",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Index.cshtml",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Index.cshtml",
+              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwCkAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:44:41.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingReservationHolderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\BookingReservationHolderViewModel.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Models\\BookingReservationHolderViewModel.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\BookingReservationHolderViewModel.cs",
+              "RelativeToolTip": "ConferenceRoom\\Models\\BookingReservationHolderViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T10:18:10.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Details.cshtml",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Details.cshtml",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Details.cshtml",
+              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:45:11.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Program.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Program.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Program.cs",
+              "RelativeToolTip": "ConferenceRoom\\Program.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAjwG0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:20:56.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Update.cshtml",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Update.cshtml",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Update.cshtml",
+              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Update.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAASwEMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T15:47:21.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Services\\RoomService.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Services\\RoomService.cs",
+              "RelativeToolTip": "ConferenceRoom\\Services\\RoomService.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAkwEIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:26:09.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "BookingService.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Services\\BookingService.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Services\\BookingService.cs",
               "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Services\\BookingService.cs",
               "RelativeToolTip": "ConferenceRoom\\Services\\BookingService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwDUAAAAlAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAIA0wCIAAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-02T15:27:04.469Z",
               "EditorCaption": ""
@@ -235,6 +368,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "20240601114522_roomentitety.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Migrations\\20240601114522_roomentitety.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Migrations\\20240601114522_roomentitety.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Migrations\\20240601114522_roomentitety.cs",
+              "RelativeToolTip": "ConferenceRoom\\Data\\Migrations\\20240601114522_roomentitety.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T12:02:54.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Controllers\\RoomController.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "ConferenceRoom\\Controllers\\RoomController.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAswD4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:10:44.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20240601114712_bookingentitety.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Migrations\\20240601114712_bookingentitety.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Migrations\\20240601114712_bookingentitety.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Migrations\\20240601114712_bookingentitety.cs",
+              "RelativeToolTip": "ConferenceRoom\\Data\\Migrations\\20240601114712_bookingentitety.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T11:59:53.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240605101119_BookingReservationHolderRelationship.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Migrations\\20240605101119_BookingReservationHolderRelationship.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Migrations\\20240605101119_BookingReservationHolderRelationship.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Migrations\\20240605101119_BookingReservationHolderRelationship.cs",
+              "RelativeToolTip": "ConferenceRoom\\Data\\Migrations\\20240605101119_BookingReservationHolderRelationship.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAjwKAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T12:00:04.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ReservationHolder.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\ReservationHolder.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Entities\\ReservationHolder.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\ReservationHolder.cs",
+              "RelativeToolTip": "ConferenceRoom\\Data\\Entities\\ReservationHolder.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T11:14:54.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T15:20:32.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ReservationHolderViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
+              "RelativeDocumentMoniker": "ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
+              "RelativeToolTip": "ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwCQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T17:58:18.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "jquery.validate.js",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
               "RelativeDocumentMoniker": "ConferenceRoom\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
@@ -247,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\appsettings.json",
               "RelativeDocumentMoniker": "ConferenceRoom\\appsettings.json",
@@ -260,59 +484,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Shared\\_LoginPartial.cshtml",
               "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "ConferenceRoom\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAUAAAAAAAAAAIBJwBMAAAAZAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAIBZwBMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-15T12:54:48.442Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Index.cshtml",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Index.cshtml",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Index.cshtml",
-              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T15:44:41.803Z",
+              "DocumentIndex": 19,
+              "Title": "gitignore.txt",
+              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\gitignore.txt",
+              "RelativeDocumentMoniker": "ConferenceRoom\\gitignore.txt",
+              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\gitignore.txt",
+              "RelativeToolTip": "ConferenceRoom\\gitignore.txt",
+              "ViewState": "AQIAAI8BAAAAAAAAAAAYwJgBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-15T15:59:49.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
-              "RelativeToolTip": "ConferenceRoom\\Data\\DBContext\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T15:20:32.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 21,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ConferenceRoom\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBJwBQAAAAtAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAIBZwBQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-02T15:47:42.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 23,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ConferenceRoom\\Properties\\launchSettings.json",
@@ -325,7 +536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "ConferenceRoom\\wwwroot\\js\\site.js",
@@ -338,46 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Program.cs",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Program.cs",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Program.cs",
-              "RelativeToolTip": "ConferenceRoom\\Program.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAIBJwDgAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T15:20:56.465Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Details.cshtml",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Details.cshtml",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Details.cshtml",
-              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Details.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAYwB0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T15:45:11.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Create.cshtml",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Create.cshtml",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Create.cshtml",
-              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Create.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBJwBMAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T15:46:33.101Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 24,
               "Title": "jquery.validate.min.js",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
               "RelativeDocumentMoniker": "ConferenceRoom\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
@@ -390,20 +562,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Update.cshtml",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Booking\\Update.cshtml",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Booking\\Update.cshtml",
-              "RelativeToolTip": "ConferenceRoom\\Views\\Booking\\Update.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAYwE4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-02T15:47:21.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "ConferenceRoom\\wwwroot\\css\\site.css",
@@ -416,20 +575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\Room.cs",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Entities\\Room.cs",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Entities\\Room.cs",
-              "RelativeToolTip": "ConferenceRoom\\Data\\Entities\\Room.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T15:15:46.895Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 28,
               "Title": "ReservationHolderService.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Services\\ReservationHolderService.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Services\\ReservationHolderService.cs",
@@ -442,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "IRoomService.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Interface\\IRoomService.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Interface\\IRoomService.cs",
@@ -455,20 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Services\\RoomService.cs",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Services\\RoomService.cs",
-              "RelativeToolTip": "ConferenceRoom\\Services\\RoomService.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAYwDwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T15:26:09.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "ReservationHolderController.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\ReservationHolderController.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Controllers\\ReservationHolderController.cs",
@@ -481,33 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ReservationHolderViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
-              "RelativeToolTip": "ConferenceRoom\\Models\\ReservationHolderViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T17:58:18.856Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "RoomController.cs",
-              "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\RoomController.cs",
-              "RelativeDocumentMoniker": "ConferenceRoom\\Controllers\\RoomController.cs",
-              "ToolTip": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\RoomController.cs",
-              "RelativeToolTip": "ConferenceRoom\\Controllers\\RoomController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAwwD4AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-02T15:10:44.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "RoomViewModel.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Models\\RoomViewModel.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Models\\RoomViewModel.cs",
@@ -520,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Room\\Index.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Room\\Index.cshtml",
@@ -533,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\ReservationHolder\\Update.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\ReservationHolder\\Update.cshtml",
@@ -546,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\ReservationHolder\\Index.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\ReservationHolder\\Index.cshtml",
@@ -559,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\ReservationHolder\\Details.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\ReservationHolder\\Details.cshtml",
@@ -572,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\ReservationHolder\\Create.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\ReservationHolder\\Create.cshtml",
@@ -585,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\ReservationHolder\\Delete.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\ReservationHolder\\Delete.cshtml",
@@ -598,7 +705,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "20240601115208_reservationholderentitety.Designer.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Data\\Migrations\\20240601115208_reservationholderentitety.Designer.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Data\\Migrations\\20240601115208_reservationholderentitety.Designer.cs",
@@ -611,7 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "IReservationHolder.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Interface\\IReservationHolder.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Interface\\IReservationHolder.cs",
@@ -624,7 +731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Room\\Update.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Room\\Update.cshtml",
@@ -637,7 +744,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "ConferenceRoom.csproj",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\ConferenceRoom.csproj",
               "RelativeDocumentMoniker": "ConferenceRoom\\ConferenceRoom.csproj",
@@ -650,7 +757,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\_ViewImports.cshtml",
@@ -663,7 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "EventsController.cs",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Controllers\\EventsController.cs",
               "RelativeDocumentMoniker": "ConferenceRoom\\Controllers\\EventsController.cs",
@@ -676,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\megi\\source\\eljona5\\ConferenceRoom\\ConferenceRoom\\Views\\Room\\Create.cshtml",
               "RelativeDocumentMoniker": "ConferenceRoom\\Views\\Room\\Create.cshtml",
@@ -686,10 +793,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-02T15:38:43.396Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

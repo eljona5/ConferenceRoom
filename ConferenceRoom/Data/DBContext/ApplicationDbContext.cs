@@ -16,14 +16,16 @@ namespace ConferenceRoom.Data.DBContext
         public DbSet<UnavailabilityPeriod> UnavailabilityPeriods { get; set; }
 
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    base.OnModelCreating(modelBuilder);
-        //    modelBuilder.Entity<Booking>()
-        //        .HasOne(b => b.ReservationHolder)
-        //        .WithOne(r => r.Booking)
-        //        .HasForeignKey<ReservationHolder>(r => r.BookingId);
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Booking>()
+                .HasOne(b => b.ReservationHolder)
+                .WithOne(r => r.Booking)
+                .HasForeignKey<ReservationHolder>(r => r.BookingId)
+                .IsRequired(false); // Make the relationship optional
+
+        }
     }
     
 }

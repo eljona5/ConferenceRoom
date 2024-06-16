@@ -12,26 +12,26 @@ namespace ConferenceRoom.Models
         public string IdCardNumber { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Name { get; set; }
 
         [Required]
-        [StringLength(50)]
+        [StringLength(100)]
         public string Surname { get; set; }
 
         [Required]
         [EmailAddress]
+        [StringLength(100)]
         public string Email { get; set; }
 
         [Required]
         [Phone]
+        [StringLength(15)]
         public string PhoneNumber { get; set; }
 
-        public string Notes { get; set; }
-
         [Required]
-        public int BookingId { get; set; }
-
-        public Booking Booking { get; set; }
+        [StringLength(500)]
+        public string Notes { get; set; }
     }
+
 }
