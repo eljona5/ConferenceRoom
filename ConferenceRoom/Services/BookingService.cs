@@ -12,17 +12,20 @@ namespace ConferenceRoom.Services
     public class BookingService : IBookingService
     {
         private readonly ApplicationDbContext _context;
+        private readonly IReservationHolderService _reservationHolderService;
 
-        public BookingService(ApplicationDbContext context)
+
+        public BookingService(ApplicationDbContext context, IReservationHolderService reservationHolderService)
         {
             _context = context;
+            _reservationHolderService = reservationHolderService;
         }
 
         public async Task<List<BookingViewModel>> GetAllBookings()
         {
             var bookingsVm = new List<BookingViewModel>();
 
-            var bookings = await _context.Bookings.Include(b => b.ReservationHolder).ToListAsync();
+            var bookings = await _context.Bookings.ToListAsync();
 
             foreach (var booking in bookings)
             {
@@ -80,16 +83,46 @@ namespace ConferenceRoom.Services
             var booking = await _context.Bookings.FindAsync(id);
             if (booking == null)
             {
-                return;
+                throw new Exception("Booking not found");
             }
 
-            booking.IsDeleted = true;
+            _context.Bookings.Remove(booking);
             await _context.SaveChangesAsync();
         }
 
-        public Task UpdateBooking(BookingViewModel booking)
+        //public Task UpdateBooking(BookingViewModel booking)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+
+        public async Task UpdateBooking(BookingViewModel vm)
         {
-            throw new NotImplementedException();
+            var bookingExists = await _context.Bookings.AnyAsync(b => b.Id == vm.Id);
+
+            if (!bookingExists)
+            {
+                throw new Exception("Booking does not exist");
+            }
+
+            var bookingEntity = ViewModelToEntity(vm);
+            _context.Bookings.Update(bookingEntity);
+            await _context.SaveChangesAsync();
+        }
+
+        private Booking ViewModelToEntity(BookingViewModel vm)
+        {
+            return new Booking
+            {
+                Id = vm.Id,
+                Code = vm.Code,
+                NumberOfPeople = vm.NumberOfPeople,
+                RoomId = vm.RoomId,
+                StartDate = vm.StartDate,
+                EndDate = vm.EndDate,
+                IsDeleted = vm.IsDeleted,
+               
+            };
         }
     }
 }

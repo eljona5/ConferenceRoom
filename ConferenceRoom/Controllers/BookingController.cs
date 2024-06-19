@@ -7,18 +7,22 @@ using ConferenceRoom.Data.DBContext;
 using ConferenceRoom.Data.Entities;
 using Microsoft.EntityFrameworkCore;    
 using ConferenceRoom.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.VisualBasic;
 
 namespace ConferenceRoom.Controllers
 {
     public class BookingController : Controller
     {
         private readonly IBookingService _bookingService;
+        private readonly IRoomService _roomService;
         private readonly IReservationHolderService _reservationHolderService;
         private readonly ApplicationDbContext _context;
 
         public BookingController(IBookingService bookingService, IRoomService roomService, IReservationHolderService reservationHolderService, ApplicationDbContext context)
         {
             _bookingService = bookingService;
+            _roomService = roomService;
             _reservationHolderService = reservationHolderService;
             _context = context;
         }
@@ -38,6 +42,7 @@ namespace ConferenceRoom.Controllers
             }
             return View(booking);
         }
+
 
         public async Task<IActionResult> Create()
         {
@@ -106,8 +111,60 @@ namespace ConferenceRoom.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+        //[HttpPost]
 
+        //// GET: Booking/Edit/5
+        //public async Task<IActionResult> Update(int id)
+        //{
+        //    var bookingViewModel = await _bookingService.GetBookingById(id);
+        //    if (bookingViewModel == null)
+        //    {
+        //        return NotFound();
+        //    }
 
+        //    // Assuming you have a method to get the list of rooms for the dropdown
+        //    ViewBag.Rooms = await _roomService.GetAllRooms();
+
+        //    var bookingReservationHolderViewModel = new BookingReservationHolderViewModel
+        //    {
+        //        Booking = bookingViewModel,
+        //        ReservationHolder = bookingViewModel.ReservationHolder
+        //    };
+
+        //    return View(bookingReservationHolderViewModel);
+        //}
+
+        //// POST: Booking/Edit/5
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> Update(int id, BookingReservationHolderViewModel bookingReservationHolderViewModel)
+        //{
+        //    if (id != bookingReservationHolderViewModel.Booking.Id)
+        //    {
+        //        return BadRequest();
+        //    }
+
+        //    if (!ModelState.IsValid)
+        //    {
+        //        // Repopulate the rooms in case of an error
+        //        ViewBag.Rooms = await _roomService.GetAllRooms();
+        //        return View(bookingReservationHolderViewModel);
+        //    }
+
+        //    try
+        //    {
+        //        await _bookingService.UpdateBooking(bookingReservationHolderViewModel.Booking);
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        ModelState.AddModelError(string.Empty, ex.Message);
+        //        // Repopulate the rooms in case of an error
+        //        ViewBag.Rooms = await _roomService.GetAllRooms();
+        //        return View(bookingReservationHolderViewModel);
+        //    }
+
+        //}
         //public async Task<IActionResult> Update(int id)
         //{
         //    var booking = await _bookingService.GetBookingById(id);
@@ -162,12 +219,22 @@ namespace ConferenceRoom.Controllers
         //    return View(model);
         //}
 
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+
+        public async Task<IActionResult> Delete(int id)
         {
-            await _bookingService.DeleteBooking(id);
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                await _bookingService.DeleteBooking(id);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                var error = new ErrorViewModel
+                {
+                    ErrorMessage = ex.Message
+                };
+                return View("Error", error);
+            }
         }
     }
 }

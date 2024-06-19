@@ -52,7 +52,9 @@ namespace ConferenceRoom.Data.Entities
         public DateTime EndDate { get; set; }
 
         public bool IsDeleted { get; set; } = false;
+        //public int ReservationHolderId { get; set; }
 
+        //[ForeignKey("ReservationHolderId")]
         public ReservationHolder ReservationHolder { get; set; }
     }
 

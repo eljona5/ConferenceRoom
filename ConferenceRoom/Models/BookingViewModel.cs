@@ -31,8 +31,11 @@ namespace ConferenceRoom.Models
 
         public bool IsDeleted { get; set; }
 
+
+
         //[Required] // Ensure this property is required
         //public ReservationHolderViewModel ReservationHolder { get; set; }
     }
 
+   
 }
