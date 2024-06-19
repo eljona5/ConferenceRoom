@@ -1,7 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿namespace ConferenceRoom.Models
+{ 
+using System.ComponentModel.DataAnnotations;
 
-namespace ConferenceRoom.Models
-{
+
+//{
     public class RoomViewModel
     {
         public int Id { get; set; }

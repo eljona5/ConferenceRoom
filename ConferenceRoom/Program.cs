@@ -1,5 +1,6 @@
 using ConferenceRoom.Data.DBContext;
 using ConferenceRoom.Interface;
+using ConferenceRoom.Seed;
 using ConferenceRoom.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddRoles<IdentityRole>()
+    .AddUserManager<UserManager<IdentityUser>>()
+    .AddRoleManager<RoleManager<IdentityRole>>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddControllersWithViews();
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
@@ -39,6 +44,9 @@ builder.Services.Configure<IdentityOptions>(options =>
 builder.Services.AddScoped<IBookingService, BookingService>();
 builder.Services.AddScoped<IReservationHolderService, ReservationHolderService>();
 builder.Services.AddScoped<IRoomService, RoomService>();
+builder.Services.AddScoped<IUnavailabilityPeriodService, UnavailabilityPeriodService>();
+
+
 
 var app = builder.Build();
 
@@ -55,6 +63,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+await RoleSeed.SeedRolesAsync(app.Services);
+await UserSeed.SeedAdmin(app.Services);
 
 app.MapControllerRoute(
     name: "default",
