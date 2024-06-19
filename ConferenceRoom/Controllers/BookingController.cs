@@ -5,7 +5,7 @@ using ConferenceRoom.Models;
 using ConferenceRoom.Interface;
 using ConferenceRoom.Data.DBContext;
 using ConferenceRoom.Data.Entities;
-using Microsoft.EntityFrameworkCore;    
+using Microsoft.EntityFrameworkCore;
 using ConferenceRoom.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.VisualBasic;
@@ -113,58 +113,58 @@ namespace ConferenceRoom.Controllers
         }
         //[HttpPost]
 
-        //// GET: Booking/Edit/5
-        //public async Task<IActionResult> Update(int id)
-        //{
-        //    var bookingViewModel = await _bookingService.GetBookingById(id);
-        //    if (bookingViewModel == null)
-        //    {
-        //        return NotFound();
-        //    }
+        // GET: Booking/Edit/5
+        public async Task<IActionResult> Update(int id)
+        {
+            var bookingViewModel = await _bookingService.GetBookingById(id);
+            if (bookingViewModel == null)
+            {
+                return NotFound();
+            }
 
-        //    // Assuming you have a method to get the list of rooms for the dropdown
-        //    ViewBag.Rooms = await _roomService.GetAllRooms();
+            // Assuming you have a method to get the list of rooms for the dropdown
+            ViewBag.Rooms = await _roomService.GetAllRooms();
 
-        //    var bookingReservationHolderViewModel = new BookingReservationHolderViewModel
-        //    {
-        //        Booking = bookingViewModel,
-        //        ReservationHolder = bookingViewModel.ReservationHolder
-        //    };
+            var bookingReservationHolderViewModel = new BookingReservationHolderViewModel
+            {
+                Booking = bookingViewModel,
+                ReservationHolder = bookingViewModel.reservationHolder
+            };
 
-        //    return View(bookingReservationHolderViewModel);
-        //}
+            return View(bookingReservationHolderViewModel);
+        }
 
-        //// POST: Booking/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<IActionResult> Update(int id, BookingReservationHolderViewModel bookingReservationHolderViewModel)
-        //{
-        //    if (id != bookingReservationHolderViewModel.Booking.Id)
-        //    {
-        //        return BadRequest();
-        //    }
+        // POST: Booking/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(int id, BookingReservationHolderViewModel bookingReservationHolderViewModel)
+        {
+            if (id != bookingReservationHolderViewModel.Booking.Id)
+            {
+                return BadRequest();
+            }
 
-        //    if (!ModelState.IsValid)
-        //    {
-        //        // Repopulate the rooms in case of an error
-        //        ViewBag.Rooms = await _roomService.GetAllRooms();
-        //        return View(bookingReservationHolderViewModel);
-        //    }
+            if (!ModelState.IsValid)
+            {
+                // Repopulate the rooms in case of an error
+                ViewBag.Rooms = await _roomService.GetAllRooms();
+                return View(bookingReservationHolderViewModel);
+            }
 
-        //    try
-        //    {
-        //        await _bookingService.UpdateBooking(bookingReservationHolderViewModel.Booking);
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        ModelState.AddModelError(string.Empty, ex.Message);
-        //        // Repopulate the rooms in case of an error
-        //        ViewBag.Rooms = await _roomService.GetAllRooms();
-        //        return View(bookingReservationHolderViewModel);
-        //    }
+            try
+            {
+                await _bookingService.UpdateBooking(bookingReservationHolderViewModel.Booking);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError(string.Empty, ex.Message);
+                // Repopulate the rooms in case of an error
+                ViewBag.Rooms = await _roomService.GetAllRooms();
+                return View(bookingReservationHolderViewModel);
+            }
 
-        //}
+        }
         //public async Task<IActionResult> Update(int id)
         //{
         //    var booking = await _bookingService.GetBookingById(id);
@@ -186,7 +186,7 @@ namespace ConferenceRoom.Controllers
         //            EndDate = booking.EndDate,
         //            IsDeleted = booking.IsDeleted
         //        },
-        //        ReservationHolder = booking.ReservationHolder
+        //        ReservationHolder = booking.reservationHolder
         //    };
         //    return View(model);
         //}
@@ -210,7 +210,7 @@ namespace ConferenceRoom.Controllers
         //        booking.StartDate = model.Booking.StartDate;
         //        booking.EndDate = model.Booking.EndDate;
         //        booking.IsDeleted = model.Booking.IsDeleted;
-        //        booking.ReservationHolder = model.ReservationHolder;
+        //        booking.reservationHolder = model.ReservationHolder;
 
         //        await _bookingService.UpdateBooking(booking);
         //        return RedirectToAction(nameof(Index));
@@ -238,3 +238,12 @@ namespace ConferenceRoom.Controllers
         }
     }
 }
+
+
+
+
+
+
+
+
+
