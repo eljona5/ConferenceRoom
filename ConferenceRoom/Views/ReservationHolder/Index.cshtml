@@ -1,0 +1,50 @@
+﻿@model IEnumerable<ConferenceRoom.Models.ReservationHolderViewModel>
+
+@{
+    ViewData["Title"] = "Reservation Holders";
+}
+
+<h1>Reservation Holders</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New Reservation Holder</a>
+</p>
+
+<p>
+    @using (Html.BeginForm("Index", "ReservationHolder", FormMethod.Get))
+    {
+        <label>Filter</label>
+        @Html.TextBox("filterTerm")
+        <input type="submit" value="Filter" class="btn btn-secondary" />
+    }
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id Card Number</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var holder in Model)
+        {
+            <tr>
+                <td>@holder.IdCardNumber</td>
+                <td>@holder.Name</td>
+                <td>@holder.Surname</td>
+                <td>@holder.Email</td>
+                <td>@holder.PhoneNumber</td>
+                <td class="table-actions">
+                    <a asp-action="Update" asp-route-id="@holder.Id" class="btn btn-sm btn-primary">Update</a> |
+                    <a asp-action="Details" asp-route-id="@holder.Id" class="btn btn-sm btn-info">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@holder.Id" class="btn btn-sm btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
