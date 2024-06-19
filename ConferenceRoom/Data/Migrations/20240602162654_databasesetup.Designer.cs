@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConferenceRoom.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240601115208_reservationholderentitety")]
-    partial class reservationholderentitety
+    [Migration("20240602162654_databasesetup")]
+    partial class databasesetup
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,7 +33,7 @@ namespace ConferenceRoom.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Code")
+                    b.Property<string>("RoomCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -41,6 +41,9 @@ namespace ConferenceRoom.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<bool?>("IsConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<int>("NumberOfPeople")
@@ -112,7 +115,7 @@ namespace ConferenceRoom.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Code")
+                    b.Property<string>("RoomCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -122,6 +125,25 @@ namespace ConferenceRoom.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Rooms");
+                });
+
+            modelBuilder.Entity("ConferenceRoom.Data.Entities.UnavailabilityPeriod", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("UnavailabilityPeriods");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>

@@ -37,7 +37,7 @@ namespace ConferenceRoom.Data.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Bookings_RoomId",
                 table: "Bookings",
-                column: "RoomId");
+                column: "RoomCode");
         }
 
         /// <inheritdoc />

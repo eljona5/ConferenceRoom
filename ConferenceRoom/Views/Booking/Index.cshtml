@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ConferenceRoom.Models.BookingViewModel>
+
+<h1>Bookings</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New Booking</a>
+</p>
+
+<p>
+    @using (Html.BeginForm("Index", "Booking", FormMethod.Get))
+    {
+        <label>Filter</label>
+        @Html.TextBox("filterTerm")
+        <input type="submit" value="Filter" class="btn btn-secondary" />
+    }
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Code</th>
+            <th>Number of People</th>
+          @*   <th>Is Confirmed</th> *@
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var booking in Model)
+        {
+            <tr>
+                <td>@booking.Id</td>
+                <td>@booking.Code</td>
+                <td>@booking.NumberOfPeople</td>
+@*                 <td>@booking.IsConfirmed</td>
+ *@                <td>@booking.StartDate</td>
+                <td>@booking.EndDate</td>
+                <td class="table-actions">
+                    <a asp-action="Update" asp-route-id="@booking.Id" class="btn btn-sm btn-primary">Update</a> |
+                    <a asp-action="Details" asp-route-id="@booking.Id" class="btn btn-sm btn-primary">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
