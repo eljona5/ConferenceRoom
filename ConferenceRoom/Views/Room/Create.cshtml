@@ -8,13 +8,13 @@
     <form asp-action="Create">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">
-            <label asp-for="Code" class="control-label"></label>
+            <label asp-for="Code" class="control-label">Room Code</label>
             <input asp-for="Code" class="form-control" />
             <span asp-validation-for="Code" class="text-danger"></span>
         </div>
 
         <div class="form-group">
-            <label asp-for="MaximumCapacity" class="control-label"></label>
+            <label asp-for="MaximumCapacity" class="control-label">Maximum Capacity</label>
             <input asp-for="MaximumCapacity" class="form-control" />
             <span asp-validation-for="MaximumCapacity" class="text-danger"></span>
         </div>
@@ -23,15 +23,15 @@
         </div>
     </form>
 </div>
+</table>
+
 <style scoped>
-    .create-form
-    {
+    .create-form {
         border: solid black 1px;
         max-height: 500px;
         max-width: 500px;
         margin: auto;
-        padding: 10px
-
+        padding: 10px;
     }
 
     input[type="submit"] {
@@ -47,4 +47,40 @@
         input[type="submit"]:hover {
             background-color: #007b5e;
         }
+
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
+        }
+
+        .styled-table th, .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+            .styled-table tbody tr:nth-of-type(even) {
+                background-color: #f3f3f3;
+            }
+
+            .styled-table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+
+            .styled-table tbody tr.active-row {
+                font-weight: bold;
+                color: #009879;
+            }
 </style>

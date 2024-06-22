@@ -70,7 +70,7 @@ namespace ConferenceRoom.Controllers
             return View();
         }
 
-        [Authorize(Roles = Constants.AdminRole)]
+       // [Authorize(Roles = Constants.AdminRole)]
         [HttpPost]
         public async Task<IActionResult> Create(RoomViewModel roomVM)
         {
